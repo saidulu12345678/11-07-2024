@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./response.html" method="post">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <div>
+                <label for="uname">Username</label><br>
+                <input type="text" id="uname" name="uname" pattern="[a-zA-Z\d_.]{5,15}" title="allows only small letter,capital letters ,digits and special characterslike(_,.)" required>
+            </div><br>
+            <div>
+                <label for="psw">Password</label><br>
+                <input type="password" id="psw" required name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&]).{8,16}" title="allows atleast one small letter,capital letter,digit ,special characterlike(!,@,#,$,%,^,&)">
+            </div><br>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" required pattern="[a-z\d_.]+@[a-z]+\.[a-z]{2,3}$" title=" allow only small letter,digits,special character like(.,_,@,$)">
+
+            </div><br>
+            <div>
+                <label for="phno">Phone number</label><br>
+                <input type="text" id="phno" name="phone no" required pattern="\+91[6-9]\d{9}" title="only digits are allowed">
+            </div><br>
+            <div>
+                <label for="dob">Date Of Birth</label><br>
+                <input type="text" id="dob" name="dob" required pattern="(0[1-9]|1[0-2]-(0[1-9]|[12][0-9]|3[01])-\d{4}" title="only digits are allowed">
+            </div> <br>  
+            <div>
+                <label for="state">State</label><br>
+                <select name="states" id="state">
+                    <option value="Andhra pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal pradesh">Arunachal pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chattisgarh">Chattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharasthra">Maharasthra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagalanad">Nagalanad</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                    
+                </select>
+            </div><br>
+            <div>
+                <label for="district">district</label><br>
+                <input list="browsers" id="district" name="district">
+                <datalist id="browsers">
+                    <option value="adilabad">n  
+                    <option value="bhadradri kothagudem">
+                    <option value="hanumakonada">
+                    <option value="hyderabad">
+                    <option value="jagitial">
+                    <option value="jangoan">
+                    <option value="jayashankar bhupalally">
+                    <option value="jogulamba gadwal">
+                    <option value="kamareddy">
+                    <option value="karimnagar">
+                    <option value="khammam">
+                    <option value="kumuram bheem asifabad">
+                    <option value="mahabubabad">
+                    <option value="mahabubnagar">
+                    <option value="mancherial">
+                    <option value="medak">
+                    <option value="medchal malkajgiri">
+                    <option value="mulugu">
+                    <option value="nagarkurnool">
+                    <option value="nalgonda">
+                    <option value="narayanpet">
+                    <option value="nirmal">
+                    <option value="nizamabad">
+                    <option value="peddapalli">
+                    <option value="rajanna sircilla">
+                    <option value="ranga reddy">
+                    <option value="sangareddy">
+                    <option value="siddipet">
+                    <option value="suryapet">
+                    <option value="vikarabad">
+                    <option value="wanaparthy">
+                    <option value="warangal">
+                    <option value="yadadri bhuvanagiri">
+                   
+                </datalist><br>
+            </div><br>
+            <div>
+                <input type="submit" value="login">
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>

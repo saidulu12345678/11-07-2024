@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./date response.html" method="post">
+        <!--  <div>
+
+            <label for="date">date</label>
+            <input type="text" name="date" id="date" required pattern="\d{2}\\d{2}\\d{4}" title="enter the date in valid formatelike dd-mm-yyyy"><br>
+        </div>-->
+        <!--<div>
+            <label for="mail">Email</label>
+            <input type="text" id="mail" name="email" required pattern="[a-z0-9_.]+@[a-z]+\.[a-z]{2,}$" title="allows only small letters , numbers and special character like (@,.,_)">
+         </div><br>-->
+        <div>
+           <div>
+                <label for="mail">Email</label>
+                <input type="text" id="mail" name="email" required pattern="[a-z0-9_.]+@gmail\.com$" title="allows only small letters , numbers and special character like (@,.,_)">
+            </div>
+         </div> 
+        <div>
+            <label for="psw">password</label>
+            <input type="text" name="password" id="psw" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&])[a-zA-Z\d!@#$%^&]{8,16}" title="it allow atleast oe small letter, one capital letter, one digit,one special character,length(8 to 16)">
+    
+           </div>
+        <div>
+            <input type="submit" value="enter">
+       </div><br>
+
+      
+       
+
+</form>
+</body>
+</html>
